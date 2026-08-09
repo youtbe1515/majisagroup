@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Majisa Group | Maliya ki Dhani – Pallets on Rent & Wholesale</title>
+  <meta name="description" content="Majisa Group, Maliya ki Dhani. Wooden pallets, plastic pallets, IBC tanks & crates – available on rent and wholesale for companies across India." />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f4f2ed;
+      color: #222;
+      line-height: 1.55;
+      font-size: 16px;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ----- TOP BAR ----- */
+    .topbar {
+      background: #1e1e1e;
+      color: #ccc;
+      font-size: 13px;
+      padding: 8px 0;
+    }
+    .topbar-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .topbar a { color: #ddd; }
+    .topbar a:hover { color: #fff; }
+
+    /* ----- HEADER ----- */
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 18px 0;
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      background: #2c2c2c;
+      color: #f0e6c8;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+    }
+    .brand-name {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1a1a1a;
+      letter-spacing: -0.3px;
+    }
+    .brand-sub {
+      font-size: 12px;
+      color: #777;
+      margin-top: 1px;
+    }
+    nav {
+      display: flex;
+      gap: 28px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    nav a { color: #444; }
+    nav a:hover { color: #111; }
+    .header-btn {
+      background: #2c2c2c;
+      color: #fff;
+      padding: 10px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+    }
+    .header-btn:hover { background: #111; }
+
+    /* ----- HERO ----- */
+    .hero {
+      background: #2c2c2c;
+      color: #f5f5f5;
+      padding: 70px 20px 80px;
+    }
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 50px;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+    .hero h1 span {
+      color: #d4c9a8;
+    }
+    .hero p {
+      font-size: 17px;
+      color: #bbb;
+      max-width: 480px;
+      margin-bottom: 28px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      background: #d4c9a8;
+      color: #1a1a1a;
+      padding: 12px 22px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary:hover { background: #c5b894; }
+    .btn-ghost {
+      background: transparent;
+      color: #eee;
+      padding: 11px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid #666;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-ghost:hover { border-color: #aaa; color: #fff; }
+
+    .hero-side {
+      background: #383838;
+      border-radius: 6px;
+      padding: 28px 26px;
+    }
+    .hero-side h3 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #d4c9a8;
+      margin-bottom: 16px;
+    }
+    .hero-side ul {
+      list-style: none;
+    }
+    .hero-side li {
+      padding: 9px 0;
+      border-bottom: 1px solid #4a4a4a;
+      font-size: 15px;
+      color: #ddd;
+      display: flex;
+      justify-content: space-between;
+    }
+    .hero-side li:last-child { border-bottom: none; }
+    .hero-side li span {
+      color: #999;
+      font-size: 13px;
+    }
+
+    /* ----- SECTION COMMON ----- */
+    .section {
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section-title {
+      margin-bottom: 36px;
+    }
+    .section-title h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #1a1a1a;
+      letter-spacing: -0.3px;
+      margin-bottom: 6px;
+    }
+    .section-title p {
+      color: #666;
+      font-size: 15px;
+      max-width: 520px;
+    }
+
+    /* ----- PRODUCTS ----- */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #e0ddd6;
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-img {
+      height: 180px;
+      background: #e8e4dc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .card-img .emoji {
+      font-size: 52px;
+      opacity: 0.4;
+    }
+    .card-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #2c2c2c;
+      color: #eee;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 9px;
+      border-radius: 3px;
+    }
+    .card-body {
+      padding: 18px 18px 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-body h3 {
+      font-size: 16px;
+      font-weight: 650;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+    .card-body .meta {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 14px;
+      flex: 1;
+    }
+    .card-body .meta div { margin-bottom: 2px; }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 12px;
+      border-top: 1px solid #eee;
+    }
+    .price {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+    .price small {
+      font-size: 12px;
+      font-weight: 500;
+      color: #888;
+    }
+    .badge {
+      font-size: 11px;
+      font-weight: 600;
+      background: #f0ece3;
+      color: #555;
+      padding: 3px 8px;
+      border-radius: 3px;
+    }
+
+    /* ----- TWO COL INFO ----- */
+    .info-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 10px;
+    }
+    .info-block h3 {
+      font-size: 18px;
+      font-weight: 650;
+      margin-bottom: 12px;
+      color: #1a1a1a;
+    }
+    .info-block p {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .info-block ul {
+      list-style: none;
+      margin-top: 8px;
+    }
+    .info-block li {
+      font-size: 14px;
+      color: #444;
+      padding: 6px 0 6px 18px;
+      position: relative;
+    }
+    .info-block li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: #999;
+    }
+
+    /* ----- CTA STRIP ----- */
+    .cta-strip {
+      background: #2c2c2c;
+      color: #eee;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .cta-strip h2 {
+      font-size: 22px;
+      font-weight: 650;
+      margin-bottom: 8px;
+    }
+    .cta-strip p {
+      color: #aaa;
+      font-size: 15px;
+      margin-bottom: 22px;
+    }
+    .cta-strip .btn-primary {
+      display: inline-block;
+    }
+
+    /* ----- CONTACT ----- */
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 50px;
+    }
+    .contact-details h3 {
+      font-size: 18px;
+      font-weight: 650;
+      margin-bottom: 18px;
+    }
+    .contact-item {
+      margin-bottom: 18px;
+    }
+    .contact-item strong {
+      display: block;
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 3px;
+      font-weight: 500;
+    }
+    .contact-item p, .contact-item a {
+      font-size: 15px;
+      color: #222;
+    }
+    .contact-item a:hover { text-decoration: underline; }
+
+    .form-box {
+      background: #fff;
+      border: 1px solid #e0ddd6;
+      border-radius: 6px;
+      padding: 28px 26px;
+    }
+    .form-box h3 {
+      font-size: 17px;
+      font-weight: 650;
+      margin-bottom: 18px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .field {
+      margin-bottom: 14px;
+    }
+    .field label {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      color: #444;
+      margin-bottom: 5px;
+    }
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      font-family: inherit;
+      background: #fafafa;
+    }
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      outline: none;
+      border-color: #888;
+      background: #fff;
+    }
+    .field textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+    .form-submit {
+      width: 100%;
+      background: #2c2c2c;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 4px;
+    }
+    .form-submit:hover { background: #111; }
+
+    /* ----- FOOTER ----- */
+    footer {
+      background: #1e1e1e;
+      color: #999;
+      padding: 36px 20px 24px;
+      font-size: 13px;
+    }
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #333;
+    }
+    .footer-brand strong {
+      color: #ddd;
+      font-size: 15px;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .footer-brand p {
+      max-width: 260px;
+      line-height: 1.5;
+    }
+    .footer-cols {
+      display: flex;
+      gap: 48px;
+    }
+    .footer-col strong {
+      color: #bbb;
+      display: block;
+      margin-bottom: 10px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+    .footer-col a {
+      display: block;
+      color: #888;
+      margin-bottom: 6px;
+    }
+    .footer-col a:hover { color: #ccc; }
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 18px auto 0;
+      text-align: center;
+      color: #666;
+      font-size: 12px;
+    }
+
+    /* ----- RESPONSIVE ----- */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 36px; }
+      .products-grid { grid-template-columns: 1fr 1fr; }
+      .info-row { grid-template-columns: 1fr; gap: 28px; }
+      .contact-wrap { grid-template-columns: 1fr; gap: 36px; }
+      nav { display: none; }
+    }
+    @media (max-width: 580px) {
+      .products-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-cols { gap: 28px; }
+      .hero { padding: 50px 20px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>Wooden &amp; Plastic Pallets · IBC Tanks · Crates</span>
+      <span>
+        <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a>
+        &nbsp;·&nbsp;
+        <a href="#contact">Get Quote</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-mark">MG</div>
+        <div>
+          <div class="brand-name">Majisa Group</div>
+          <div class="brand-sub">Maliya ki Dhani</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="header-btn">Request Quote</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <h1>Pallets &amp; packaging supply<br>for <span>companies &amp; warehouses</span></h1>
+        <p>
+          Wooden pallets, plastic pallets, IBC tanks and wooden crates available on rent and wholesale. Ready stock from Maliya ki Dhani.
+        </p>
+        <div class="hero-actions">
+          <a href="#products" class="btn-primary">View Products</a>
+          <a href="#contact" class="btn-ghost">Ask for Rates</a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <h3>Current focus</h3>
+        <ul>
+          <li>Wooden pallets <span>Rent / Sale</span></li>
+          <li>Plastic pallets <span>Rent / Sale</span></li>
+          <li>IBC tanks <span>Available</span></li>
+          <li>Wooden crates <span>Custom</span></li>
+          <li>Drum pallets <span>On request</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section-title">
+        <h2>Products</h2>
+        <p>Indicative pricing. Final rate depends on quantity, condition and delivery location. Call for current stock.</p>
+      </div>
+
+      <div class="products-grid">
+
+        <article class="card">
+          <div class="card-img">
+            <span class="emoji">🪵</span>
+            <span class="card-tag">In stock</span>
+          </div>
+          <div class="card-body">
+            <h3>Heavy Duty Wooden Pallet</h3>
+            <div class="meta">
+              <div>1300 × 1200 mm (other sizes available)</div>
+              <div>Soft wood · 4-way entry</div>
+              <div>HT treated options</div>
+            </div>
+            <div class="card-footer">
+              <div class="price">₹1,100 <small>/ pc</small></div>
+              <span class="badge">Rent / Sale</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <span class="emoji">📦</span>
+            <span class="card-tag">Bulk</span>
+          </div>
+          <div class="card-body">
+            <h3>Used &amp; Reconditioned Pallets</h3>
+            <div class="meta">
+              <div>Standard industrial sizes</div>
+              <div>Sorted &amp; graded</div>
+              <div>HT marks available</div>
+            </div>
+            <div class="card-footer">
+              <div class="price">On request</div>
+              <span class="badge">Rent / Sale</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <span class="emoji">🟦</span>
+            <span class="card-tag">In stock</span>
+          </div>
+          <div class="card-body">
+            <h3>Industrial Plastic Pallet</h3>
+            <div class="meta">
+              <div>1200 × 1000 × 130 mm</div>
+              <div>Capacity up to 5 ton</div>
+              <div>Black / Blue options</div>
+            </div>
+            <div class="card-footer">
+              <div class="price">₹1,100 <small>/ pc</small></div>
+              <span class="badge">Rent / Sale</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <span class="emoji">🛢️</span>
+            <span class="card-tag">Available</span>
+          </div>
+          <div class="card-body">
+            <h3>IBC Tank / Tote</h3>
+            <div class="meta">
+              <div>1000 L capacity</div>
+              <div>HDPE + galvanized cage</div>
+              <div>Forklift base</div>
+            </div>
+            <div class="card-footer">
+              <div class="price">On request</div>
+              <span class="badge">Rent / Sale</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <span class="emoji">📫</span>
+            <span class="card-tag">Custom</span>
+          </div>
+          <div class="card-body">
+            <h3>Wooden Crates &amp; Boxes</h3>
+            <div class="meta">
+              <div>Plywood / solid wood</div>
+              <div>Made to size</div>
+              <div>Export packing ready</div>
+            </div>
+            <div class="card-footer">
+              <div class="price">On request</div>
+              <span class="badge">Made to order</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <span class="emoji">🔴</span>
+            <span class="card-tag">Available</span>
+          </div>
+          <div class="card-body">
+            <h3>Steel Drum Pallets</h3>
+            <div class="meta">
+              <div>2-drum capacity</div>
+              <div>Steel frame</div>
+              <div>Space-saving design</div>
+            </div>
+            <div class="card-footer">
+              <div class="price">On request</div>
+              <span class="badge">Rent / Sale</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / HOW WE WORK -->
+  <section class="section" id="about" style="background:#fff; border-top:1px solid #e8e4dc; border-bottom:1px solid #e8e4dc;">
+    <div class="container">
+      <div class="section-title">
+        <h2>How we work</h2>
+        <p>Simple dealing. Clear rates. Stock you can see.</p>
+      </div>
+      <div class="info-row">
+        <div class="info-block">
+          <h3>Rent for companies</h3>
+          <p>Factories, warehouses and logistics companies can take pallets and IBC tanks on rent. Short term or longer contracts — both possible.</p>
+          <ul>
+            <li>Wooden &amp; plastic pallets</li>
+            <li>IBC tanks</li>
+            <li>Flexible duration</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Wholesale supply</h3>
+          <p>Need bulk quantity for your own use or resale? We supply from ready stock. Rates improve with volume.</p>
+          <ul>
+            <li>New &amp; reconditioned stock</li>
+            <li>Standard and custom sizes</li>
+            <li>Dispatch coordination available</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-strip">
+    <h2>Need stock this week?</h2>
+    <p>Share size, quantity and whether you need rent or purchase. We’ll confirm availability and rate.</p>
+    <a href="#contact" class="btn-primary">Send requirement</a>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Call, WhatsApp or send the form. We respond with stock and pricing.</p>
+      </div>
+
+      <div class="contact-wrap">
+        <div class="contact-details">
+          <h3>Majisa Group</h3>
+          <div class="contact-item">
+            <strong>Location</strong>
+            <p>Maliya ki Dhani</p>
+          </div>
+          <div class="contact-item">
+            <strong>Phone / WhatsApp</strong>
+            <p><a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a></p>
+            <p style="font-size:12px;color:#888;margin-top:2px;">Replace with your number</p>
+          </div>
+          <div class="contact-item">
+            <strong>Email</strong>
+            <p><a href="mailto:info@majisagroup.com">info@majisagroup.com</a></p>
+          </div>
+          <div class="contact-item">
+            <strong>Hours</strong>
+            <p>Mon – Sat, 9:00 AM – 6:30 PM</p>
+          </div>
+        </div>
+
+        <div class="form-box">
+          <h3>Quick enquiry</h3>
+          <form onsubmit="event.preventDefault(); alert('Thank you. We will contact you with stock and rates.'); this.reset();">
+            <div class="form-row">
+              <div class="field">
+                <label>Name *</label>
+                <input type="text" required placeholder="Your name" />
+              </div>
+              <div class="field">
+                <label>Phone *</label>
+                <input type="tel" required placeholder="+91" />
+              </div>
+            </div>
+            <div class="field">
+              <label>Company (optional)</label>
+              <input type="text" placeholder="Company name" />
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label>Product *</label>
+                <select required>
+                  <option value="">Select</option>
+                  <option>Wooden Pallets</option>
+                  <option>Plastic Pallets</option>
+                  <option>IBC Tanks</option>
+                  <option>Wooden Crates</option>
+                  <option>Drum Pallets</option>
+                  <option>Other / Mixed</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Need</label>
+                <select>
+                  <option>Rent</option>
+                  <option>Purchase</option>
+                  <option>Both</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label>Quantity &amp; details</label>
+              <textarea placeholder="Approx quantity, size, location, timeline..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>Majisa Group</strong>
+        <p>Maliya ki Dhani. Supply of wooden &amp; plastic pallets, IBC tanks and industrial packaging — rent and wholesale.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <strong>Products</strong>
+          <a href="#products">Wooden Pallets</a>
+          <a href="#products">Plastic Pallets</a>
+          <a href="#products">IBC Tanks</a>
+          <a href="#products">Crates</a>
+        </div>
+        <div class="footer-col">
+          <strong>Contact</strong>
+          <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a>
+          <a href="#contact">Enquiry form</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © Majisa Group, Maliya ki Dhani
+    </div>
+  </footer>
+
+</body>
+</html>
